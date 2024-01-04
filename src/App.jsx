@@ -14,6 +14,7 @@ import { IoPeople } from "react-icons/io5";
 import { SiThemoviedatabase } from "react-icons/si";
 import UserContext from './context/UserContext';
 import Side from './components/side';
+import Footer from './components/footer';
 
 function App() {
   const [toggle , settoggle] = useState(false)
@@ -181,6 +182,9 @@ function App() {
         </div>:<div className="contents">
           <Defaultcont/>
         </div>}
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

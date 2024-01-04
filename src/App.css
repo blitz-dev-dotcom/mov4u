@@ -35,6 +35,102 @@ height: 4px;
   background-color: rgb(31, 29, 29);
   height: 600vh;
 }
+/* styling for footer **/
+.footer{
+  height: 60vh;
+  width: 100%;
+  
+}
+.footerpad{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.icofoot{
+  height: 20%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.footic{
+  font-size: 2rem;
+  color: var(--foco);
+  cursor:pointer
+}
+.footic:hover{
+   color: var(--bco);
+}
+.footdes{
+  height: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footdp{
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.fdp1{
+  height: 50%;
+  display: flex;
+ justify-content: space-around;
+}
+.fdp2{
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.fdp1 > p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  font-size: larger;
+  color: var(--foco);
+  cursor: pointer;
+}
+.fdp2 > p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  color: var(--foco);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.footcom{
+  height: 20%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footcom > h4 {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: var(--foco);
+}
+.footcom >h4 > span{
+  color: var(--foco);
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 6px 10px 6px 10px;
+  background-color: var(--bco);
+}
+.copyright{
+  height: 10%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright > p{
+  letter-spacing: 3px;
+  color: var(--foco);
+}
 .App-header{
   position: fixed;
   height: 10vh;
@@ -158,6 +254,7 @@ height: 4px;
 }
 .container{
   display: flex;
+  
 }
 .side{
   height: 540vh;
@@ -168,7 +265,7 @@ height: 4px;
 }
 .colh{
   color: var(--foco);
-
+  padding-top: 20px;
 }
 .sidebar{
   height: 200vh;
@@ -191,15 +288,16 @@ height: 4px;
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 100px;
     
 }
 .colum1{
+  
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .colum2{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +343,7 @@ li{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 60px;
 }
 .contents{
   
@@ -279,17 +377,33 @@ li{
 .shows{
   position: relative;
   height: 15%;
-  border: 1px solid white;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .week{
   position: relative;
   height: 15%;
-  border: 1px solid white;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .week1{
   position: relative;
   height: 15%;
-  border: 1px solid white;
+  
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.w1coll{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sechead{
   color: var(--bco);
@@ -439,5 +553,171 @@ iframe{
   color: var(--foco);
   
 }
+.explore{
+  height: 10%;
+  
+  display: flex;
+  align-items: center;
+}
+.title{
+  height: 10%;
+  
+}
+.mover{
+  height: 75%;
+  width: 100%;
+ 
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.movcad1{
+  height: 400px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #595454;
+  transition: transform 1s;
+}
+.movcad1:hover{
+  background-color: transparent;
+  transform: scale(0.95);
+}
+.movpos1{
+  background-image: url(./assets/annapoorani.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+}
+
+.movpos2{
+  background-image: url(./assets/fightclub.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+}
+.movpos3{
+  background-image: url(./assets/alambana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+}
+.movpos4{
+  background-image: url(./assets/parking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+}
+.movpos5{
+  background-image: url(./assets/conjuring.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+}
+.movcad1 > h3{
+  font-size: 18px;
+  color: var(--foco);
+  letter-spacing: 1px;
+}
+
+.star{
+  color: var(--foco);
+  font-size: 1rem;
+}
+
+.exphead{
+  font-size: var(--fsiz);
+  color: var(--bco);
+  letter-spacing: 1px;
+}
+.titlepad{
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  border-left:1px solid var(--bco)
+}
+.titlehead{
+  font-size: 1.5rem;
+  color: var(--foco);
+  padding-left: 10px;
+}
+.titlepa{
+  color: var(--bco);
+  padding-left: 10px;
+}
+.nextic{
+  color: var(--bco);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nextic:hover{
+  filter: drop-shadow(10px 10px 20px rgb(119, 255, 119));
+  transform: scale(1.5);
+}
+.top{
+  height: 20%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.movertop{
+  
+    height: 75%;
+    width: 100%;
+    
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  .tophead{
+    height: 70%;
+    border-left: 1px solid var(--bco);
+    padding-left: 10px;
+  }
+  .cd{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cdpad{
+    height: 80%;
+    width: 90%;
+    
+    display: flex;
+    justify-content: space-around;
+  }
+  .cd1{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .cdpos{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+  }
+  .cd1 > h2 {
+    color: var(--foco);
+  }
+  .cd1 > h2 :hover{
+    color: var(--bco);
+  }
+
+
 
 
