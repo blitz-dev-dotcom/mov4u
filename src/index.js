@@ -7,21 +7,24 @@ import Layout from './components/layout';
 import Home from './components/Home';
 
 import { BrowserRouter, RouterProvider, createBrowserRouter, createRoutesFromElements ,Route} from 'react-router-dom';
+import Apicaller from './components/Apicaller';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-        
         <Route path='' element={<Home />} />
+        <Route path='/tr'  element={<Apicaller/>}/> 
+       
+
     </Route>
   )
 )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>
+ 
+    <RouterProvider router={router}/>
+  
 
   
 );

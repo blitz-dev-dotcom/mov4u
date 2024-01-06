@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import topcele from '../assets/topcele.jpg';
 import sam from '../assets/sam.jpg';
 import loki from '../assets/loki.jpg';
@@ -25,6 +26,7 @@ import { LiaAwardSolid } from "react-icons/lia";
 import { IoPeople } from "react-icons/io5";
 import { SiThemoviedatabase } from "react-icons/si";
 import { RiMenu2Fill } from "react-icons/ri";
+
 
 function Home() {
    const [toggle,settoggle]= useState(false)
@@ -102,7 +104,7 @@ function Home() {
             <ul className="sideli">
               <li className="trending">
                 <IoIosTrendingUp className='sideic'/>
-                <h3 className='sidehead'>Trending</h3>
+                <Link to='/tr'><h3 className='sidehead'>Trending</h3></Link>
               </li>
               <li className="movie">
                 <MdMovieCreation className='sideic'/>
@@ -160,11 +162,11 @@ function Home() {
         </div>
         </div>
         </div>}
-        {toggle?<div className="contents" style={{width:`100%`}}>
+        {toggle?<div className="contents" style={{width:`90%`}}>
         <div className="contpad">
         <div className="expand">
           {toggle?<SiThemoviedatabase  className='menuic' onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }} />:<RiMenu2Fill className='menuic'onClick={() => { if (toggle === false) {settoggle(true) } else {settoggle(false) } }}/>}
-              <p className='menupara'>Menu</p>
+              
           </div>
             <section className="today">
                 <h1 className='sechead'>Featured Today</h1>
@@ -354,7 +356,7 @@ function Home() {
         <div className="contpad">
         <div className="expand">
           {toggle?<SiThemoviedatabase  className='menuic' onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }} />:<RiMenu2Fill className='menuic'onClick={() => { if (toggle === false) {settoggle(true) } else {settoggle(false) } }}/>}
-              <p className='menupara'>Menu</p>
+              
           </div>
             <section className="today">
                 <h1 className='sechead'>Featured Today</h1>
@@ -539,6 +541,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            
     </div>
         </div>}
       </div>

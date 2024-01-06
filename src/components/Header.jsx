@@ -1,8 +1,7 @@
 import React from 'react';
 import { LiaBookmarkSolid } from "react-icons/lia";
 import { CiUser } from "react-icons/ci";
-import { SiThemoviedatabase } from "react-icons/si";
-import { RiMenu2Fill } from "react-icons/ri";
+import { BiSearchAlt } from "react-icons/bi";
 
 function Header() {
   
@@ -15,7 +14,7 @@ function Header() {
             <h3 className="loghead">Mov4u</h3>
           </logo>
           
-          <>
+          <div className='headin'>
           <input 
             list='browsers'
             className='input'
@@ -28,8 +27,10 @@ function Header() {
             <option value="Uriyadi" />
             <option value="Ok Kanmani" />
           </datalist>
-
-          </>
+          <div className="search">
+          <BiSearchAlt className='searchic'/>
+          </div>
+          </div>
           
           <div className="watch">
               <LiaBookmarkSolid className='bookmark'/>
