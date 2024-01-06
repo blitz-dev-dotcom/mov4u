@@ -32,18 +32,19 @@ height: 4px;
   --sico:rgb(108, 105, 105);
 }
 .App{
-  background-color: rgb(31, 29, 29);
-  height: 600vh;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
 /* styling for footer **/
 .footer{
   height: 60vh;
   width: 100%;
-  
+  background-color: rgb(31, 29, 29);
 }
 .footerpad{
-  height: 100%;
-  width: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
 }
@@ -161,12 +162,22 @@ height: 4px;
   color: var(--fobco);
 }
 .expand{
+  position: sticky;
+  top:90%;
+  left: 90%;
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  background: linear-gradient(30deg,rgb(169, 240, 169)20%,rgb(80, 228, 80)40%,rgb(0, 223, 0)80%,rgb(0, 255, 0)100%);
   display: flex;
-  gap: 15px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
+  z-index: 999999;
+  cursor: pointer;
 }
 .menuic{
+  
   color: var(--foco);
   cursor: pointer;
   font-size: var(--fsiz);
@@ -177,9 +188,9 @@ height: 4px;
   filter: drop-shadow(10px 10px 20px var(--bcosh));
 }
 .menupara{
-  color: var(--foco);
+  color: black;
   font-size: var(--fsizp);
- 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 .input{
   width: 40%;
@@ -254,7 +265,7 @@ height: 4px;
 }
 .container{
   display: flex;
-  
+  background-color: rgb(31, 29, 29);
 }
 .side{
   height: 540vh;
@@ -268,7 +279,7 @@ height: 4px;
   padding-top: 20px;
 }
 .sidebar{
-  height: 200vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;

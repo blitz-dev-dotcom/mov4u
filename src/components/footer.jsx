@@ -7,7 +7,7 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { FaCopyright } from "react-icons/fa";
 function footer() {
   return (
-    <div className='footerpad'>
+    <div className='footerpad'style={{backgroundColor:`rgb(31, 29, 29)`}}>
         <div className="icofoot">
             <FaInstagram className='footic'/>
             < FaTiktok className='footic'/>
