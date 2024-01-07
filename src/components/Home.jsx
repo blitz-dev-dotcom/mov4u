@@ -104,7 +104,7 @@ function Home() {
             <ul className="sideli">
               <li className="trending">
                 <IoIosTrendingUp className='sideic'/>
-                <Link to='/tr'><h3 className='sidehead'>Trending</h3></Link>
+                <h3 className='sidehead'>Trending</h3>
               </li>
               <li className="movie">
                 <MdMovieCreation className='sideic'/>

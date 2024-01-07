@@ -1,10 +1,11 @@
 import React from 'react';
 import { LiaBookmarkSolid } from "react-icons/lia";
 import { CiUser } from "react-icons/ci";
-import { BiSearchAlt } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
-  
+  const navigate = useNavigate();
   
   return (
     <>
@@ -14,24 +15,10 @@ function Header() {
             <h3 className="loghead">Mov4u</h3>
           </logo>
           
-          <div className='headin'>
-          <input 
-            list='browsers'
-            className='input'
-            placeholder='Search on Mov4u'
-          />
-          <datalist id="browsers">
-            <option value="Sita Ramam" /> 
-            <option value="Interstellar" />
-            <option value="Leo" />
-            <option value="Uriyadi" />
-            <option value="Ok Kanmani" />
-          </datalist>
-          <div className="search">
-          <BiSearchAlt className='searchic'/>
-          </div>
-          </div>
+          <NavLink to='/tr' id='searchby' >Search By Movies</NavLink>
+          <NavLink to='/' id='searchby' >Home</NavLink>
           
+          <div className='nav2'>
           <div className="watch">
               <LiaBookmarkSolid className='bookmark'/>
               <h3 className="watchlist">Watchlist</h3>
@@ -48,6 +35,7 @@ function Header() {
               <option className='option'>SPA</option>
               <option className='option'>FRE</option>
             </select>
+          </div>
           </div>
         </nav>
       </header>

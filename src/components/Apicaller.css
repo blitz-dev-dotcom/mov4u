@@ -1,0 +1,153 @@
+.api{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.appcont{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.apppara{
+    color: white;
+    font-size: 1rem;
+}
+#searchby{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    width: 260px;
+}
+.active{
+    
+    background-color: rgb(19, 198, 19);
+    display: inline-block;
+    border-radius: 40px;
+}
+.apiim{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    
+}
+.apiim > img{
+    height: 100%;
+    width: 17%;
+    border-radius: 10px;
+}
+
+.apicast{
+    height: 20%;
+    border-bottom: 1px solid rgb(123, 120, 120);
+    color: var(--bco);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  
+}
+.apiname{
+    height: 10%;
+    border-bottom: 1px solid rgb(123, 120, 120);
+    color: var(--bco);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.apides{
+    height: 10%;
+    color: var(--bco);
+    border-bottom: 1px solid rgb(123, 120, 120);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.rating{
+    height: 10%;
+    border-bottom: 1px solid rgb(123, 120, 120);
+    color: var(--bco);
+    font-size: 0.7rem;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+.resname{
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.resdes{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+   
+}
+.resdate{
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.resrat{
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+/** skeleton animation **/
+.img{
+    height: 100%;
+    width: 17%;
+    border-radius: 10px;
+    animation: overlay 1s linear infinite alternate;
+}
+@keyframes overlay{
+    from{
+        background-color: hsl(204, 3%, 66%);
+    }
+    to{
+      background-color: hsl(210, 2%, 22%);
+    }
+  }
+.apiskel{
+    height: 6%;
+    border-radius: 10px;
+    animation: overlay 1s linear infinite alternate;
+}
+.apiskel1{
+    height: 6%;
+    width: 40%;
+    border-radius: 10px;
+    animation: overlay 1s linear infinite alternate;
+}
+.apiskel2{
+    height: 6%;
+    width: 30%;
+    border-radius: 10px;
+    animation: overlay 1s linear infinite alternate;
+}
+.appcontbf{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bf{
+    font-size: 4rem;
+    color: white;
+}
