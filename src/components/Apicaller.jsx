@@ -91,7 +91,7 @@ try {
         </div>
       </div>:<div className='appcont'>
       <div className="apiim">
-          <div className="img"></div>
+          <div className="apiimgage"></div>
         </div>
         <div className="apiskel2"></div>
         <div className="apiskel1"></div>
