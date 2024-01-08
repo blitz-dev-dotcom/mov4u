@@ -15,7 +15,7 @@ function Header() {
             <h3 className="loghead">Mov4u</h3>
           </logo>
           
-          <NavLink to='/tr' id='searchby' >Search By Movies</NavLink>
+          <NavLink to='/tr' id='searchby' >Search </NavLink>
           <NavLink to='/' id='searchby' >Home</NavLink>
           
           <div className='nav2'>

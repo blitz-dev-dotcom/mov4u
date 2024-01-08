@@ -11,7 +11,7 @@ function Apicaller() {
   const [popularity , setpopularity] = useState('');
   const [overview,setoverview] = useState('')
   const [date , setdate] = useState('')
-  const [skel , setskel] = useState(false);
+  const [skel , setskel] = useState(true);
   const [load , setload]= useState(false)
   const fetchdata = async(a) =>{
     const options = {

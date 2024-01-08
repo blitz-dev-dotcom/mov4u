@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { RiYoutubeLine } from "react-icons/ri";
 import { FaCopyright } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 function footer() {
   return (
     <div className='footerpad'style={{backgroundColor:`rgb(31, 29, 29)`}}>
@@ -22,7 +23,7 @@ function footer() {
                     <p>Site Index</p>
                     <p> Help</p>
                     <p>Explore Pro</p>
-                    <p>Developer</p>
+                    <Link to='/dev' className='Link'>Developer</Link>
                     <p>Press Room</p>
             
                 </div>
