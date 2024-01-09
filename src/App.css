@@ -209,11 +209,11 @@ height: 4px;
   font-size: 1rem;
   width: 200px;
 }
-/**.active{
+.active{
   
   background-color: rgb(87, 221, 87);
   border-radius: 10px;
-} **/
+} 
 
 .headin{
   display: flex;
