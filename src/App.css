@@ -143,11 +143,38 @@ height: 4px;
   height: 10vh;
   width: 100%;
   background-color: rgb(47, 46, 46);
+  z-index: 9999;
   display: flex;
+  justify-content: space-between;
+}
+.App-header > h3{
+  margin-left: 10px;
+  color: white;
+  background-color: var(--bco);
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  align-self: center;
+}
+.navul{
+  display: flex;
+  gap: 50px;
+  margin: 0 100px 0 0;
+  
+}
+.navli{
+  padding: 10px 20px 10px 20px;
+  align-self: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.navmen{
+  display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  width: 100px;
+  
 }
+
 .navbar{
   height: 50%;
   width: 90%;
@@ -182,11 +209,11 @@ height: 4px;
   font-size: 1rem;
   width: 200px;
 }
-.active{
+/**.active{
   
   background-color: rgb(87, 221, 87);
-  border-radius: 40px;
-}
+  border-radius: 10px;
+} **/
 
 .headin{
   display: flex;
@@ -794,9 +821,78 @@ iframe{
     font-size: 4rem;
     color: white;
 }
+.menuhead{
+  display: none;
+}
   @media (min-width:300px) and (max-width:600px){
     
+
+    /** responsive nav **/
+    .App-header{
+      position: fixed;
+      min-height: 10vh;
+      max-height: 20vh;
+      width: 100%;
+      background-color: rgb(47, 46, 46);
+      z-index: 9999;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10px;
+    }
+    .App-header > h3{
+      margin-left: 10px;
+      color: white;
+      background-color: var(--bco);
+      border-radius: 10px;
+      padding: 15px 15px 15px 15px;
+      align-self: center;
+    }
+    .navul{
+      display: none;
+      
+      
+    }
+    .navli{
+      padding: 20px 0 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .navmen{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      
+    }
+    .navres{
+      
+      width: 90%;
+      position: absolute;
+      display: block;
+      list-style: none;
+      left: 5%;
+      top: 100%;
+      background-color:  rgb(47, 46, 46);
+      transition: all 0.5s ease-in-out;
+      border-radius: 20px;
+      border-bottom: 1px solid white;
+    }
+    .ic{
+      font-size: 1.5rem;
+      color: white;
+    }
+    .active{
+      background-color: rgb(125, 232, 125);
+    }
 /* styling for footer **/
+.menuhead{
+  align-self: center;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  cursor:pointer;
+}
 .footer{
   height: 60vh;
   width: 100%;
@@ -916,27 +1012,15 @@ iframe{
   letter-spacing: 3px;
   color: var(--foco);
 }
-.App-header{
-  position: fixed;
-  height: 10vh;
-  width: 100%;
-  background-color: rgb(47, 46, 46);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-.navbar{
-  height: 50%;
-  width: 98%;
-  display: flex;
-  gap: 20px;
-  
- 
-}
+
+
 .nav2{
   width: 30%;
   display: flex;
+  
+}
+.mobnav{
+  display: grid;
   
 }
 .searchby{
@@ -1074,12 +1158,7 @@ iframe{
   font-size: 0.8rem;
   width: 80px;
 }
-.active{
-  
-  background-color: rgb(87, 221, 87);
-  
-  border-radius: 40px;
-}
+
 .bf{
   letter-spacing: 1px;
   font-size: 1rem;
