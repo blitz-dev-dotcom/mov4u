@@ -133,6 +133,12 @@
     justify-content: center;
     align-items: center;
 }
+.apiimgage{
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    animation: overlay 1s linear infinite alternate;
+}
 @media (min-width:300px) and (max-width:600px){
     
     .appcont{

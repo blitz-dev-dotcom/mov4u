@@ -514,10 +514,10 @@ function Home() {
             </section>
             <section className="showsbor">
                 
-                <div className="title" style={{paddingLeft:`10px`}}>
-                    <div className="titlepad">
-                        <h3 className='titlehead'>Born This Month <GrNext className='nextic'/></h3>
-                        <p className='titlepa'>January</p>
+                <div className="titlebor" style={{paddingLeft:`10px`}}>
+                    <div className="titlepadbor">
+                        <h3 className='titleheadbor'>Born This Month <GrNext className='nextic'/></h3>
+                        <p className='titlepabor'>January</p>
                     </div>
                 </div>
                 <div className="cd">

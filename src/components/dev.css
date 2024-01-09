@@ -118,6 +118,13 @@ h1,h2,h3{
       background-color: hsl(210, 2%, 22%);
     }
   }
+  .img1{
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+    animation: overlay 1s linear infinite alternate;
+    
+}
 @media (min-width:300px) and (max-width:600px){
     .dev{
         height: 100vh;
