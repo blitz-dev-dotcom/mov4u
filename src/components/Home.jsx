@@ -87,13 +87,13 @@ function Home() {
         </div>
         <div className="sidepad2">
             <div className="side2pad">
-                <img  className='img1' src={forbes} alt=''/>
-                <img className='img1' src={hegde} alt=''/>
-                <img className='img1'  src={naani} alt=''/>
-                <img className='img1'  src={art} alt=''/>
-                <img className='img1'  src={kiara} alt=''/>
-                <img className='img1'  src={forbes} alt=''/>
-                <img className='img1'  src={naani} alt=''/>
+                <img  className='img1s' src={forbes} alt=''/>
+                <img className='img1s' src={hegde} alt=''/>
+                <img className='img1s'  src={naani} alt=''/>
+                <img className='img1s'  src={art} alt=''/>
+                <img className='img1s'  src={kiara} alt=''/>
+                <img className='img1s'  src={forbes} alt=''/>
+                <img className='img1s'  src={naani} alt=''/>
         </div>
         </div>
         </div>:<div className="side">

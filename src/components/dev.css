@@ -71,7 +71,7 @@ h1,h2,h3{
     gap: 40px;
     
 }
-.img{
+.img1d{
     height: 100%;
     width: 20%;
     border-radius: 50%;
@@ -206,7 +206,7 @@ h1,h2,h3{
         gap: 10px;
         
     }
-    .img1{
+    .img1d{
         height: 250px;
         width: 250px;
         border-radius: 30px;

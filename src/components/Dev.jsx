@@ -33,7 +33,7 @@ function Dev() {
             </div>
         </div>: <div className="devcont1">
             <div className="devma1">
-                <div className="img1"></div>
+                <div className="img1d"></div>
                 <div className='devdes1'>
                     <h1></h1>
                     <h2></h2>
@@ -42,7 +42,7 @@ function Dev() {
                 </div>
             </div>
             <div className="devma1">
-                <div className="img1"></div>
+                <div className="img1d"></div>
                 <div className='devdes1'>
                     <h1></h1>
                     <h2></h2>
