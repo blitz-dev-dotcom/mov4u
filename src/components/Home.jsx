@@ -512,7 +512,7 @@ function Home() {
                 </div>
                     </div>
             </section>
-            <section className="shows">
+            <section className="showsbor">
                 
                 <div className="title" style={{paddingLeft:`10px`}}>
                     <div className="titlepad">
