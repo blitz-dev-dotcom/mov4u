@@ -1,10 +1,10 @@
 import React , {useState} from 'react';
-import { LiaBookmarkSolid } from "react-icons/lia";
-import { CiUser } from "react-icons/ci";
+
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { RiMenu2Fill } from "react-icons/ri";
 import { MdMovieCreation } from "react-icons/md";
+import { RxCross1 } from "react-icons/rx";
 
 function Header() {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ function Header() {
             <li className='navli'>User1</li>
           </ul>
           <div className='navmen'>
-            {isopen ? <RiMenu2Fill className='ic'onClick={()=>{setisopen(!isopen);setmobile(true)}}/> : <MdMovieCreation className='ic' onClick={()=>{setisopen(!isopen);setmobile(false)}}/> }
+            {isopen ? <RxCross1  className='ic' onClick={()=>{setisopen(!isopen);setmobile(false)}}/> : <RiMenu2Fill className='ic'onClick={()=>{setisopen(!isopen);setmobile(true)}}/> }
           </div>
       </header>
     </>
