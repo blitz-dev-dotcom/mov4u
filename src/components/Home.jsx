@@ -164,8 +164,8 @@ function Home() {
         </div>}
         {toggle?<div className="contents" style={{width:`90%`}}>
         <div className="contpad">
-        <div className="expand">
-          {toggle?<SiThemoviedatabase  className='menuic' onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }} />:<RiMenu2Fill className='menuic'onClick={() => { if (toggle === false) {settoggle(true) } else {settoggle(false) } }}/>}
+        <div className="expand" onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }}>
+          {toggle?<SiThemoviedatabase  className='menuic'  />:<RiMenu2Fill className='menuic'/>}
               
           </div>
             <section className="today">
@@ -354,8 +354,8 @@ function Home() {
     </div>
         </div>:<div className="contents">
         <div className="contpad">
-        <div className="expand">
-          {toggle?<SiThemoviedatabase  className='menuic' onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }} />:<RiMenu2Fill className='menuic'onClick={() => { if (toggle === false) {settoggle(true) } else {settoggle(false) } }}/>}
+        <div className="expand" onClick={() => { if (toggle === false) { settoggle(true) } else { settoggle(false) } }} >
+          {toggle?<SiThemoviedatabase  className='menuic' />:<RiMenu2Fill className='menuic'/>}
               
           </div>
             <section className="today">
