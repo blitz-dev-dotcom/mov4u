@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import Layout from './components/layout';
 import Home from './components/Home';
 import Dev from './components/Dev';
+import Trending from './components/Trending';
+import Action from './genre/Action';
+import Horror from './genre/Horror';
+import Comedy from './genre/Comedy';
 import { BrowserRouter, RouterProvider, createBrowserRouter, createRoutesFromElements ,Route} from 'react-router-dom';
 import Apicaller from './components/Apicaller';
 
@@ -15,7 +19,10 @@ const router = createBrowserRouter(
         <Route path='' element={<Home />} />
         <Route path='/tr'  element={<Apicaller/>}/> 
        <Route path='/dev' element={<Dev />} />
-
+       <Route path='/trending' element={<Trending />} />
+       <Route path='/action' element={<Action />} />
+       <Route path='/Horror' element={<Horror />} />
+       <Route path='/comedy' element={<Comedy />} />
     </Route>
   )
 )

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import topcele from '../assets/topcele.jpg';
 import sam from '../assets/sam.jpg';
 import loki from '../assets/loki.jpg';
@@ -104,7 +104,7 @@ function Home() {
             <ul className="sideli">
               <li className="trending">
                 <IoIosTrendingUp className='sideic'/>
-                <h3 className='sidehead'>Trending</h3>
+                <NavLink to='/trending'><h3 className='sidehead'>Trending</h3></NavLink>
               </li>
               <li className="movie">
                 <MdMovieCreation className='sideic'/>
@@ -132,8 +132,8 @@ function Home() {
               <h3 className='colh'>Film Genre</h3>
             <div className="ulclas">
             <ul className='side padder'>
-              <li><h3 className='sidehead'>Action</h3></li>
-              <li><h3 className='sidehead'>Horror</h3></li>
+              <li><NavLink to='/action'><h3 className='sidehead'>Action</h3></NavLink></li>
+              <li><NavLink to='/Horror'><h3 className='sidehead'>Horror</h3></NavLink></li>
               <li><h3 className='sidehead'>Comedy</h3></li>
               <li><h3 className='sidehead'>Animation</h3></li>
               <li><h3 className='sidehead'>Thriller</h3></li>
