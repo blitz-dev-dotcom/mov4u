@@ -15,8 +15,8 @@ function Header() {
         <header className="App-header">
           <h3>Mov4U</h3>
           <ul className={mobile ? 'navres' : "navul"}>
-            <NavLink to='/tr' className='navli' ><li>Search</li></NavLink>
-            <NavLink to='' className='navli'><li>Home</li></NavLink>
+            <NavLink to='/tr' className='navli'  ><li id='uHfv'>Search</li></NavLink>
+            <NavLink to='' className='navli'><li id='uHfv'>Home</li></NavLink>
             <li className='navli'>WatchList</li>
             <li className='navli'>User1</li>
           </ul>
