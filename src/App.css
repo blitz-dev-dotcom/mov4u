@@ -32,6 +32,8 @@ height: 4px;
   --fsizh:1rem;
   --sico:rgb(108, 105, 105);
 }
+
+
 .App{
   display: flex;
   flex-direction: column;

@@ -108,23 +108,23 @@ function Home() {
               </li>
               <li className="movie">
                 <MdMovieCreation className='sideic'/>
-                <h3 className='sidehead'>Movies</h3>
+                <h3 className='sidehead' title='sorry we are currently working on this'>Movies</h3>
               </li>
               <li className="tv">
                 <PiTelevisionFill className='sideic'/>
-                <h3 className='sidehead'>TV</h3>
+                <h3 className='sidehead' title='sorry we are currently working on this'>TV</h3>
               </li>
               <li className="news">
                 <FaRegNewspaper className='sideic'/>
-                <h3 className='sidehead'>News</h3>
+                <h3 className='sidehead' title='sorry we are currently working on this'>News</h3>
               </li>
               <li className="awards">
                 < LiaAwardSolid className='sideic'/>
-                <h3 className='sidehead'>Awards</h3>
+                <h3 className='sidehead' title='sorry we are currently working on this'>Awards</h3>
               </li>
               <li className="people">
                 <IoPeople className='sideic'/>
-                <h3 className='sidehead'>Peoples</h3>
+                <h3 className='sidehead' title='sorry we are currently working on this'>Peoples</h3>
               </li>
             </ul>
             </div>
@@ -134,15 +134,15 @@ function Home() {
             <ul className='side padder'>
               <li><NavLink to='/action'><h3 className='sidehead'>Action</h3></NavLink></li>
               <li><NavLink to='/Horror'><h3 className='sidehead'>Horror</h3></NavLink></li>
-              <li><h3 className='sidehead'>Comedy</h3></li>
-              <li><h3 className='sidehead'>Animation</h3></li>
-              <li><h3 className='sidehead'>Thriller</h3></li>
-              <li><h3 className='sidehead'>Romance</h3></li>
-              <li><h3 className='sidehead'>Scifi</h3></li>
-              <li><h3 className='sidehead'>Biographical</h3></li>
-              <li><h3 className='sidehead'>Crime</h3></li>
-              <li><h3 className='sidehead'>Fantasy</h3></li>
-              <li><h3 className='sidehead'>Drama</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Comedy</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Animation</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Thriller</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Romance</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Scifi</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Biographical</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Crime</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Fantasy</h3></li>
+              <li><h3 className='sidehead' title='sorry we are currently working on this'>Drama</h3></li>
             </ul>
             </div>
             </div>
