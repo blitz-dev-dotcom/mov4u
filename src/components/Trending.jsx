@@ -25,7 +25,7 @@ function Trending() {
           };
           const response = await fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options);
           const result = await response.json();
-         
+          console.log(result);
     
           // Set the state after fetching data
           setres(result.results);

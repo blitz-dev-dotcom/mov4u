@@ -25,7 +25,8 @@ function Login() {
                 const local = Credential.user.uid;
                 setCurrentUser(local.substring(6,0))
                 setpasscheck(true);
-                setErrmsg('login Successfull!')
+                setErrmsg('login Successfull!');
+                setTimeout(()=>navigate('/'),3000)
              })
              .catch(err=>{
                 setpasscheck(true);

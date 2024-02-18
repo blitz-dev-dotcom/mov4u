@@ -10,7 +10,7 @@ import Trending from './components/Trending';
 import Action from './genre/Action';
 import Horror from './genre/Horror';
 import Comedy from './genre/Comedy';
-import { BrowserRouter, RouterProvider, createBrowserRouter, createRoutesFromElements ,Route} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createRoutesFromElements ,Route} from 'react-router-dom';
 import Apicaller from './components/Apicaller';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
