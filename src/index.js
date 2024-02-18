@@ -12,17 +12,25 @@ import Horror from './genre/Horror';
 import Comedy from './genre/Comedy';
 import { BrowserRouter, RouterProvider, createBrowserRouter, createRoutesFromElements ,Route} from 'react-router-dom';
 import Apicaller from './components/Apicaller';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
+import { AuthProvider } from './contexts/AuthContext';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-        <Route path='' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/tr'  element={<Apicaller/>}/> 
        <Route path='/dev' element={<Dev />} />
        <Route path='/trending' element={<Trending />} />
        <Route path='/action' element={<Action />} />
        <Route path='/Horror' element={<Horror />} />
        <Route path='/comedy' element={<Comedy />} />
+       <Route path='/signup' element={<SignUp/>}>
+       </Route>
+       <Route path='/login' element={<Login />} />
+        
     </Route>
   )
 )
@@ -30,7 +38,9 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
-    <RouterProvider router={router}/>
+    <AuthProvider>
+      <RouterProvider router={router}/>
+    </AuthProvider>
   
 
   

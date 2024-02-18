@@ -13,9 +13,9 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div className="App" >
       <Header value={toggle} func = {updater} />
-      <Home togglev={toggle}/>
+      <Home togglev={toggle} />
       <div className="footer" style={{backgroundColor: `rgb(31, 29, 29)`}}>
         <Footer />
       </div>

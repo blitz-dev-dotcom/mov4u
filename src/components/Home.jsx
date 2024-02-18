@@ -28,8 +28,11 @@ import { SiThemoviedatabase } from "react-icons/si";
 import { RiMenu2Fill } from "react-icons/ri";
 
 
+
+
 function Home() {
-   const [toggle,settoggle]= useState(false)
+   const [toggle,settoggle]= useState(false);
+   
   return (
     <>
         <div className="container">
@@ -87,7 +90,7 @@ function Home() {
         </div>
         <div className="sidepad2">
             <div className="side2pad">
-                <img  className='img1s' src={forbes} alt=''/>
+                <img  className='img1s'  src={forbes} alt=''/>
                 <img className='img1s' src={hegde} alt=''/>
                 <img className='img1s'  src={naani} alt=''/>
                 <img className='img1s'  src={art} alt=''/>
@@ -151,13 +154,13 @@ function Home() {
         <div className="sidepad2">
         
             <div className="side2pad">
-                <img  className='img1' src={forbes} alt=''/>
-                <img className='img1' src={hegde} alt=''/>
-                <img className='img1'  src={naani} alt=''/>
-                <img className='img1'  src={art} alt=''/>
-                <img className='img1'  src={kiara} alt=''/>
-                <img className='img1'  src={forbes} alt=''/>
-                <img className='img1'  src={naani} alt=''/>
+                <img  className='img1'loading='lazy' src={forbes} alt=''/>
+                <img className='img1' loading='lazy' src={hegde} alt=''/>
+                <img className='img1' loading='lazy' src={naani} alt=''/>
+                <img className='img1' loading='lazy' src={art} alt=''/>
+                <img className='img1' loading='lazy' src={kiara} alt=''/>
+                <img className='img1' loading='lazy' src={forbes} alt=''/>
+                <img className='img1' loading='lazy' src={naani} alt=''/>
        
         </div>
         </div>
@@ -172,17 +175,17 @@ function Home() {
                 <h1 className='sechead'>Featured Today</h1>
                 <div className="imgslider">
                     <div className="card">
-                        <img className='deimg' src={topcele} alt="" />
+                        <img className='deimg'loading='lazy' src={topcele} alt="" />
                         <h3>Top 10 Actors in India</h3>
                         <p>see List</p>
                     </div>
                     <div className="card">
-                        <img className='deimg' src={sam} alt="" />
+                        <img className='deimg'loading='lazy' src={sam} alt="" />
                         <h3>Top 10 Actress in India</h3>
                         <p>see List</p>
                     </div>
                     <div className="card">
-                        <img className='deimg' src={loki} alt="" />
+                        <img className='deimg'loading='lazy' src={loki} alt="" />
                         <h3>Top 10 Series Now</h3>
                         <p>see List</p>
                     </div>
@@ -305,17 +308,17 @@ function Home() {
                     <div className="w1coll">
                     <div className="imgslider">
                     <div className="card">
-                        <img className='deimg' src={salaarpra} alt="" />
+                        <img className='deimg' loading='lazy' src={salaarpra} alt="" />
                         <h3>Salaar</h3>
                         <p>Released On Dec 22</p>
                     </div>
                     <div className="card">
-                        <img className='deimg' src={dunki} alt="" />
+                        <img className='deimg'loading='lazy' src={dunki} alt="" />
                         <h3>Dunki</h3>
                         <p> Released On Dec 22</p>
                     </div>
                     <div className="card">
-                        <img className='deimg' src={godzilla} alt="" />
+                        <img className='deimg'loading='lazy' src={godzilla} alt="" />
                         <h3>GodZilla</h3>
                         <p>On April 2024</p>
                     </div>
