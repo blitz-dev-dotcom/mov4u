@@ -1,17 +1,19 @@
 import React , {useState} from 'react';
 
 import { useNavigate } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { Link , NavLink } from 'react-router-dom';
 import { RiMenu2Fill } from "react-icons/ri";
 import { MdMovieCreation } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import { useAuth } from '../contexts/AuthContext';
+
 
 function Header() {
   const navigate = useNavigate();
   const [mobile,setmobile] = useState(false)
   const [isopen,setisopen] = useState(false);
   const {CurrentUser} = useAuth();
+  const {Reg} = useAuth();
   return (
     <>
         <header className="App-header">
@@ -19,7 +21,7 @@ function Header() {
           <ul className={mobile ? 'navres' : "navul"}>
             <NavLink to='/tr' className='navli'  ><li id='uHfv'>Search</li></NavLink>
             <NavLink to='' className='navli'><li id='uHfv'>Home</li></NavLink>
-            <NavLink to='/signup' className='navli'><li id='uHfv'>Register</li></NavLink>
+            {Reg ? '' : <NavLink to='/signup' className='navli'><li id='uHfv'>Register</li></NavLink>}
             <li className='navli'>{CurrentUser}</li>
           </ul>
           <div className='navmen'>

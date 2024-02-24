@@ -1,13 +1,15 @@
-import React , {useEffect, useRef , useState} from 'react'
+import React , { useState} from 'react'
 import './signup.css';
 import { Link } from 'react-router-dom';
 import {auth} from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import {createUserWithEmailAndPassword} from 'firebase/auth'
+import { MdOutlineVerified } from "react-icons/md";
 
 
 function SignUp() {
+    
     const [name,setname] = useState('');
     const [password,setpassword] = useState('');
     const [pass2,setpass2] = useState('');
@@ -16,16 +18,19 @@ function SignUp() {
     const [error,seterror] = useState(false);
     const [Errormsg,setErrormsg] = useState('');
     const [Success,setSuccess] = useState(false);
+    const [loader , setloader] = useState(false)
     const[passmsg,setpassmsg] = useState('')
     const {navigator} = useAuth();
     function handleSubmit(e){
         e.preventDefault();
+        
         if(password===pass2 && password.length >6 && name.includes('@gmail.com')){
+            setloader(true);
             createUserWithEmailAndPassword(auth,name,password)
             .then(credential=>{
                 console.log(credential);
                 setSuccess(true);
-                setTimeout(()=>{navigate('/login')},7000)
+                setTimeout(()=>{navigate('/login')},4000)
             })
             .catch(err=>{
                 seterror(true);
@@ -83,12 +88,20 @@ function SignUp() {
                     onChange={(e)=>{setpass2(e.target.value)}}
                     required
                 />
-                {Success ? <p  className='success'>SignUp SuccessFull</p> : "" }
-                {Success ? <p  className='success'>Wait You Will Be Redirected To Login page!</p> : "" }
-                <button type='submit' onClick={handleSubmit}>SignUp</button>
+                
+                {loader ? <button className='flexpre loaderbut'><div className='loading'></div></button> : <button type='submit' onClick={handleSubmit}>SignUp</button>}
                 <p className='U56njh'>Already Have an Account? <Link to='/login' className='linker'>Login</Link></p>
             </form>
         </div>
+        <popup className={Success? 'flex' : 'none'}>
+            <div className="sucex flexpre">
+                <div className="sucexpad">
+                < MdOutlineVerified  className='icodff'/>
+                <h2>SignUp SuccessFull</h2>
+                <p>Wait You will redirected to our login page in 4 seconds </p>
+                </div>
+            </div>
+        </popup>
     </div>
   )
 }

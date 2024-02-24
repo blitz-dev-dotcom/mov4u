@@ -1,10 +1,10 @@
-import React , {useEffect, useRef , useState} from 'react'
+import React , {useState} from 'react'
 import './signup.css';
-import { Link } from 'react-router-dom';
 import {auth } from '../firebase';
-import {signInWithEmailAndPassword} from 'firebase/auth'
+import {signInWithEmailAndPassword , GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import { FcGoogle } from "react-icons/fc";
 
 function Login() {
 
@@ -14,9 +14,19 @@ function Login() {
     const [Errmsg,setErrmsg] = useState('');
     const [Danmsg,setDanmsg] = useState('');
     const navigate = useNavigate();
-    const {login} = useAuth();
-    
+    const {Reg} = useAuth();
+    const {setReg} = useAuth();
     const {setCurrentUser} = useAuth();
+    function googleSignIn(e){
+        e.preventDefault();
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth,provider)
+        .then(credential=>{
+            setCurrentUser(credential.user.displayName);
+            navigate('/');
+        })
+        .catch(err=>{setErrmsg(err)})
+    }
     function handleSubmit(e){
         e.preventDefault();
         if(password.length > 6 && name.includes('@gmail.com')){
@@ -26,6 +36,7 @@ function Login() {
                 setCurrentUser(local.substring(6,0))
                 setpasscheck(true);
                 setErrmsg('login Successfull!');
+                setReg(!Reg);
                 setTimeout(()=>navigate('/'),3000)
              })
              .catch(err=>{
@@ -50,6 +61,7 @@ function Login() {
     <div className='signup'>
         <div className="signupcard">
             <h1>Login</h1>
+            <button onClick={googleSignIn} className='google'> <FcGoogle className='goo' />Sign in with Google</button>
             {passcheck?<p  className='success'>{Errmsg}</p>:""}
             
             <form>
@@ -74,8 +86,10 @@ function Login() {
                 
                 <button type='submit' onClick={handleSubmit}>SignIn</button>
                 
-            </form>
-        </div>
+                
+                </form>
+                
+            </div>
     </div>
   )
 }
