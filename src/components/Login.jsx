@@ -17,12 +17,16 @@ function Login() {
     const {Reg} = useAuth();
     const {setReg} = useAuth();
     const {setCurrentUser} = useAuth();
+    const {setphotoUrl}= useAuth();
     function googleSignIn(e){
         e.preventDefault();
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth,provider)
         .then(credential=>{
             setCurrentUser(credential.user.displayName);
+            setphotoUrl(credential.user.photoURL);
+            setReg(true)
+            
             navigate('/');
         })
         .catch(err=>{setErrmsg(err)})

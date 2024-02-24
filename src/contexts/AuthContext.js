@@ -11,7 +11,8 @@ export function useAuth(){
 export function AuthProvider({children}) {
     const [CurrentUser,setCurrentUser] = useState('');
     const [navigator,setnavigator] = useState(false);
-    const [Reg , setReg] = useState(false)
+    const [Reg , setReg] = useState(false);
+    const [photoUrl , setphotoUrl] = useState(null);
 
     // useEffect(()=>{
     //     const Unsubscribe = onAuthStateChanged(auth,initializeUser);
@@ -38,7 +39,9 @@ export function AuthProvider({children}) {
         navigator,
         setCurrentUser,
         Reg,
-        setReg
+        setReg,
+        photoUrl,
+        setphotoUrl
       
     }
   return (

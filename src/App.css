@@ -552,6 +552,14 @@ li{
   letter-spacing: 1px;
   
 }
+.authphoto{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+}
+
 .traidiv{
   height: 90%;
   

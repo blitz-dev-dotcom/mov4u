@@ -14,6 +14,7 @@ function Header() {
   const [isopen,setisopen] = useState(false);
   const {CurrentUser} = useAuth();
   const {Reg} = useAuth();
+  const {photoUrl} = useAuth();
   return (
     <>
         <header className="App-header">
@@ -21,8 +22,8 @@ function Header() {
           <ul className={mobile ? 'navres' : "navul"}>
             <NavLink to='/tr' className='navli'  ><li id='uHfv'>Search</li></NavLink>
             <NavLink to='' className='navli'><li id='uHfv'>Home</li></NavLink>
-            {Reg ? '' : <NavLink to='/signup' className='navli'><li id='uHfv'>Register</li></NavLink>}
-            <li className='navli'>{CurrentUser}</li>
+            {Reg ? <li className='navli'><div className='authphoto' style={{backgroundImage:`url(${photoUrl})`}}></div>{CurrentUser}</li> : <NavLink to='/signup' className='navli'><li id='uHfv'>Register</li></NavLink>}
+            
           </ul>
           <div className='navmen'>
             {isopen ? <RxCross1  className='ic' onClick={()=>{setisopen(!isopen);setmobile(false)}}/> : <RiMenu2Fill className='ic'onClick={()=>{setisopen(!isopen);setmobile(true)}}/> }
