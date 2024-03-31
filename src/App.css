@@ -552,6 +552,17 @@ li{
   letter-spacing: 1px;
   
 }
+.signout{
+  display: block;
+  font-size: 1rem;
+  align-self: center;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+.signout:hover{
+  text-decoration: underline;
+  color: rgb(124, 255, 124);
+}
 .authphoto{
   height: 30px;
   width: 30px;

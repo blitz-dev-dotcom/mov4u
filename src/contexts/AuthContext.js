@@ -9,7 +9,7 @@ export function useAuth(){
 }
 
 export function AuthProvider({children}) {
-    const [CurrentUser,setCurrentUser] = useState('');
+    const [CurrentUser,setCurrentUser] = useState(null);
     const [navigator,setnavigator] = useState(false);
     const [Reg , setReg] = useState(false);
     const [photoUrl , setphotoUrl] = useState(null);

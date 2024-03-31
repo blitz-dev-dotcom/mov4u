@@ -14,10 +14,7 @@ function Login() {
     const [Errmsg,setErrmsg] = useState('');
     const [Danmsg,setDanmsg] = useState('');
     const navigate = useNavigate();
-    const {Reg} = useAuth();
-    const {setReg} = useAuth();
-    const {setCurrentUser} = useAuth();
-    const {setphotoUrl}= useAuth();
+    const {Reg , setCurrentUser , setphotoUrl , setReg} = useAuth();
     function googleSignIn(e){
         e.preventDefault();
         const provider = new GoogleAuthProvider();
@@ -25,8 +22,11 @@ function Login() {
         .then(credential=>{
             setCurrentUser(credential.user.displayName);
             setphotoUrl(credential.user.photoURL);
-            setReg(true)
-            
+            const name = credential.user.displayName;
+            const photo = credential.user.photoURL;
+            localStorage.setItem('user',JSON.stringify(name));
+            localStorage.setItem('photo',JSON.stringify(photo));
+            setReg(true);
             navigate('/');
         })
         .catch(err=>{setErrmsg(err)})

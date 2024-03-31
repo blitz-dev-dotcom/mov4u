@@ -23,13 +23,18 @@ function Trending() {
               Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyOTRhZWVmNmJkMGZiMTI2YTBhYmFmNTMyOWI1OTYzMiIsInN1YiI6IjY1OTU4NGVjMzI2ZWMxMjA3MTA2YzFkNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7hLm9so1as6fob413pDEgyGy5fHrJAhyKTf8teH50QA',
             },
           };
-          const response = await fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options);
-          const result = await response.json();
-          console.log(result);
+          fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
+          .then((resp)=>{
+            console.log(resp)
+            setres(resp.results);
+            setTimeout(()=>setskel(true),4000)
+          })
+          .catch((err)=>{
+            console.log(err)
+          })
     
           // Set the state after fetching data
-          setres(result.results);
-          setTimeout(()=>setskel(true),4000)
+          
         };
     
         // Call the function when the component mounts
